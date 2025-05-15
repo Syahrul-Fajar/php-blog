@@ -1,9 +1,9 @@
 <?php
-$host = getenv("MYSQLHOST") ?: "containers-us-west-xxx.railway.app"; // fallback jika dijalankan secara lokal
-$port = getenv("MYSQLPORT") ?: 3306;
-$user = getenv("MYSQLUSER") ?: "root";
-$pass = getenv("MYSQL_ROOT_PASSWORD") ?: "PabwqmFOeawHLuZkCEWHSJdCveLGDfnh";
-$db   = getenv("MYSQL_DATABASE") ?: "railway";
+$host = "mysql.railway.internal"; // ambil dari Plugin MySQL → Host
+$port = 3306;
+$user = "root";                               // dari Plugin MySQL
+$pass = "PabwqmFOeawHLuZkCEWHSJdCveLGDfnh";   // dari Plugin MySQL
+$db   = "railway";                            // dari Plugin MySQL
 
 $conn = new mysqli($host, $user, $pass, $db, $port);
 
