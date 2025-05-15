@@ -1,5 +1,5 @@
 <?php
-$host = "mysql.railway.internal"; // ambil dari Plugin MySQL → Host
+$host = "mysql-production-b71a.up.railway.app"; // ambil dari Plugin MySQL → Host
 $port = 3306;
 $user = "root";                               // dari Plugin MySQL
 $pass = "PabwqmFOeawHLuZkCEWHSJdCveLGDfnh";   // dari Plugin MySQL
