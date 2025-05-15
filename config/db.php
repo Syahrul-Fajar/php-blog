@@ -5,5 +5,13 @@ $user = getenv('MYSQLUSER');
 $pass = getenv('MYSQL_ROOT_PASSWORD');
 $db   = getenv('MYSQLDATABASE');
 
-var_dump($host, $port, $user, $pass, $db);
-exit;  // Hentikan eksekusi untuk melihat hasil var_dump
+if (!$host || !$port || !$user || !$db) {
+    die('Environment variables for database connection are not set properly.');
+}
+
+$conn = new mysqli($host, $user, $pass, $db, (int)$port);
+
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+?>
