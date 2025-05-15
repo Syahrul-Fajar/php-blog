@@ -1,0 +1,85 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   margin: 0;
+   padding: 20px;
+}
+
+h2 {
+   text-align: center;
+}
+
+.article {
+   background: #fff;
+   padding: 15px;
+   margin: 15px auto;
+   border-radius: 6px;
+   max-width: 700px;
+   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+a {
+   text-decoration: none;
+   color: #007bff;
+}
+
+form {
+   margin: 0 auto;
+   width: 400px;
+}
+
+input, textarea {
+   width:
+}
+.login-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 32px 32px 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    min-width: 340px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 24px;
+    color: #ff9800;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-container input[type="submit"] {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.login-container input[type="submit"]:hover {
+    background: #ffa751;
+}
