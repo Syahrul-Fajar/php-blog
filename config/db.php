@@ -1,9 +1,9 @@
 <?php
 $host = getenv('MYSQLHOST');
-$port = getenv('MYSQLPORT');
-$user = getenv('MYSQLUSER');
-$pass = getenv('MYSQL_ROOT_PASSWORD');
-$db   = getenv('MYSQLDATABASE');
+$port = '3306';
+$user = 'root';
+$pass = 'PabwqmFOeawHLuZkCEWHSJdCveLGDfnh';
+$db   = 'railway';
 
 if (!$host || !$port || !$user || !$db) {
     die('Environment variables for database connection are not set properly.');
